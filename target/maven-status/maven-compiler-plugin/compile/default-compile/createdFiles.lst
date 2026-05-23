@@ -1,0 +1,15 @@
+com\tw\joi\delivery\model\Category.class
+com\tw\joi\delivery\model\LoyaltyTier.class
+com\example\Producto.class
+com\tw\joi\delivery\model\DistanceMap.class
+com\tw\joi\delivery\model\Order.class
+com\tw\joi\delivery\model\OrderStatus.class
+com\tw\joi\delivery\model\Customer.class
+com\tw\joi\delivery\model\Item.class
+com\tw\joi\delivery\problems\SampleProblem.class
+com\tw\joi\delivery\model\Store.class
+com\example\App.class
+com\tw\joi\delivery\model\Delivery.class
+com\example\Persona.class
+com\tw\joi\delivery\staticData\StaticData.class
+com\tw\joi\delivery\model\DeliveryPartner.class
