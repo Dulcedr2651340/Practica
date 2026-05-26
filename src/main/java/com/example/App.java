@@ -18,6 +18,8 @@ public class App
         ArrayList<Producto> productos = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
 
+        ValidadorPrecio validarPrecio = new ValidadorPrecio();
+
         int opcion = 0;
 
         while(opcion != 8){
@@ -59,6 +61,11 @@ public class App
                             System.out.println("Precio: ");
                             precio = sc.nextDouble();
                             sc.nextLine(); 
+
+                            if(!validarPrecio.validar(precio)){
+                                System.out.println("Precio Invalido");
+                                continue;    
+                            }
                                 
                             System.out.println("Marca: ");
                             marca = sc.nextLine();
