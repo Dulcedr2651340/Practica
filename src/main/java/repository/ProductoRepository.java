@@ -20,7 +20,7 @@ public class ProductoRepository {
         productos.remove(id);
     }
 
-    public HashMap<Integer, Producto> listarProducto(){
+    public HashMap<Integer, Producto> listarProductos(){
         return productos;
     }
     
