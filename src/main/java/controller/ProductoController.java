@@ -6,6 +6,7 @@ import service.ProductoService;
 public class ProductoController {
 
     ProductoService productoService = new ProductoService();
+    
 
     public void guardarProducto(Producto producto){
         productoService.guardarProducto(producto);
@@ -13,6 +14,10 @@ public class ProductoController {
 
     public void listarProductos(){
         productoService.listarProductos();
+    }
+
+     public void eliminarProducto(int id){
+        productoService.eliminarProducto(id);
     }
 
 }

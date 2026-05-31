@@ -18,5 +18,10 @@ public class ProductoService {
 
         }
     }
+
+      public void eliminarProducto(int id){
+        repository.eliminarProducto(id);
+    }
+
     
 }

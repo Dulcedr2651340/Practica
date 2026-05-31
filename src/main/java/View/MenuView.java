@@ -15,12 +15,13 @@ public class MenuView {
 
         int opcion = 0;
 
-        while(opcion != 3){
+        while(opcion != 5){
 
             System.out.println("==============MENU================");
             System.out.println("1. Agregar un nuevo producto: ");
             System.out.println("2. Listar productos: ");
-            System.out.println("3. Salir");
+            System.out.println("3. Eliminar un producto: ");
+            System.out.println("4. Salir");
 
             opcion = sc.nextInt();
             sc.nextLine();
@@ -54,6 +55,17 @@ public class MenuView {
                     break;
 
                 case 3:
+
+                    System.out.println("ID eliminar:");
+                    int idEliminar = sc.nextInt();
+
+                    productoController.eliminarProducto(idEliminar);
+
+                    System.out.println("Producto eliminado");
+
+                break;    
+
+                case 4:
                     System.out.println("Saliendo . . . .");    
                     break;
                 default:
