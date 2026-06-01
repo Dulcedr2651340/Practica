@@ -1,6 +1,9 @@
 package service;
 
+import java.util.HashSet;
+
 import model.Producto;
+import model.ProductoElectronico;
 import repository.ProductoRepository;
 
 public class ProductoService {
@@ -23,5 +26,21 @@ public class ProductoService {
         repository.eliminarProducto(id);
     }
 
+    public void mostrarMarcasUnicas(){
+
+    HashSet<String> marcas = new HashSet<>();
+
+    for(Producto p : repository.listarProductos().values()){
+
+        ProductoElectronico pe = (ProductoElectronico) p;
+
+        marcas.add(pe.getMarca());
+    }
+
+    System.out.println(marcas);
+}
+
+
+    
     
 }
