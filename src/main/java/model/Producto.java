@@ -6,6 +6,10 @@ public abstract class Producto {
     private String nombre;
     private double precio;
 
+    public producto(){
+        
+    }
+
     public Producto(int id, String nombre, double precio){
         this.id = id;
         this.nombre = nombre;

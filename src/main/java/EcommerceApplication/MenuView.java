@@ -1,4 +1,4 @@
-package view;
+package EcommerceApplication;
 import java.util.Scanner;
 
 import controller.ProductoController;

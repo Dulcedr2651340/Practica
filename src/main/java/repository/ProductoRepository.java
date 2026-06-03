@@ -2,8 +2,11 @@ package repository;
 
 import java.util.HashMap;
 
+import org.springframework.stereotype.Repository;
+
 import model.Producto;
 
+@Repository
 public class ProductoRepository {
 
     private HashMap<Integer, Producto> productos = new HashMap<>();
